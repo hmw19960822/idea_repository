@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/product")
 public class ProductController {
 
+
 	@Autowired
 	private ProductService productService;
 
@@ -23,6 +24,7 @@ public class ProductController {
 	public Product findById(@PathVariable Long id) {
 		Product product = productService.findById(id);
 		product.setProductName("访问的服务地址:"+ip + ":" + port);
+        System.out.println("测试需改的提交");
 		return product;
 	}
 }

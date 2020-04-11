@@ -118,4 +118,9 @@ dmypy.json
 
 data/
 model/
-.iml
+target/classes
+api_zuul_server.iml
+eureka_server.iml
+order_service.iml
+product_service.iml
+spring_cloud_demo1.iml
